@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>図書館情報技術論</title>
+    <style>
+      h1 { 
+        text-align: center;
+        margin-bottom: 0.2em;
+        font-size: 40px;
+        letter-spacing: 3px;
+        color: #f3e8ff;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+        animation: fadeSlide 1.2s ease-out;
+      }
+      @keyframes fadeSlide {
+        0% { opacity: 0; transform: translateY(-20px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      body > h4 {
+        text-align: center;
+        font-size: 24px;
+        color: #f3e8ff;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.45);
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+      }
+      body > h4::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+        animation: shine 2.5s infinite;
+      }
+      @keyframes shine {
+        0% { left: -100%; }
+        100% { left: 120%; }
+      }
+
+      
+      body {
+        background-image: url("https://storage.designup.jp/blog/design/vector-free-bg-illust-03.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Yu Gothic", "Meiryo", sans-serif;
+        padding: 20px;
+      }
+
+      .note {
+        max-width: 800px;   
+        margin: 30px auto;     
+        background-color: rgba(255,255,255,0.92);
+        font-size: 18px;
+        line-height: 1.9;
+        padding: 30px 40px;
+        border-radius: 18px;
+        border: 1px solid #e0e0e0; 
+        box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+        backdrop-filter: blur(5px);
+        animation: floatIn 1.2s ease-out;
+      }
+      @keyframes floatIn {
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      .note h4 {
+        text-align: left;
+        font-size: 26px;
+        color: #778899;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 6px rgba(0,0,0,0.45);
+        margin: 10px 0 15px 0;
+        padding-left: 14px;
+        border-left: 5px solid #778899;
+        animation: slideLeft 0.8s ease-out;
+      }
+      @keyframes slideLeft {
+        0% { opacity: 0; transform: translateX(-20px); }
+        100% { opacity: 1; transform: translateX(0); }
+      }
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>夏休みの思い出</h1>
+    
+    <div class="note">
+      <h4>編み物に挑戦</h4>
+      <p>時間がなく、なかなかできなかった編み物を夏休みには十分に楽しむことができた。ネット上で見つけたカーディガンに一目惚れし、毎日寝る前に少しずつコツコツと編み進めていった。夏休みの終わりが近づく頃には糸処理も終わり、無事に完成させることができた。好きなことにじっくり取り組む時間を持てたこと充実した休暇を過ごすことができ、完成したときには大きな達成感も味わうことができた。</p>
+    </div>
+  </body>
+</html>
